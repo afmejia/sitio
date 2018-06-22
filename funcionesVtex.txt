@@ -1,0 +1,5 @@
+VTEX
+
+1. removeFilter: Elimina los parametros de la URL y hace una nueva petición sin ellos.
+2. infinitScroll: Hace que todo el contenido se muestre en una sola página la cual da la impresión de no tener fin. Esto se logra haciendo peticiones AJAX cada vez que se llega al final de la página. El usuario es notificado cuando no existen mas resulados para cargar en la página.
+3. scrollToTop: Hace que el sitio se desplace al inicio de la página, mostrando una animación que se agrega con css.
