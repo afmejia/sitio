@@ -48,8 +48,21 @@ $(document).ready(function () {
         console.log(data[0].foto);
         changeImgs();
         let t = setInterval(changeImgs, 3000);
-        // $(".item").each(function () {
-        //     $(this).append('<img src="img/1.jpg">');
-        // });
+    });
+
+    $('#gallery1, #gallery2, #gallery3, #gallery4').click(function () {
+        var element = $(this).find('img').attr('src');
+        console.log("This is the element, ", element);
+        $('[id="product-image"]').attr('src', element);
+
+
+        let desc = $(this).find('#desc').text();
+        $('#desc').find('h2').text(desc);
+        console.log(desc);
+    });
+
+    $('.sizes-item').click(function () {
+        $('.selected').removeClass("selected");
+        $(this).toggleClass('selected');
     });
 });
